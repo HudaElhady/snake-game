@@ -15,10 +15,6 @@ class Scoreboard(Turtle):
         self.clear()
         self.write(f"Score: {self.score} High Score: {self.high_score}", align='center', font=('Arial', 12, 'bold'))
 
-    # def display_game_over(self):
-    #     self.goto(0, 0)
-    #     self.write("GAME OVER", align='center', font=('Arial', 12, 'bold'))
-
     def reset(self):
         if self.score > self.high_score:
             self.high_score = self.score
